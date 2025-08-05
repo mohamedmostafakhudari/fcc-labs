@@ -12,7 +12,8 @@ This is a simple Event hub that acts as tool to organize a group of events in an
 
 ## Objective
 
-The objective here is to see how an anchor element could be used to link to document fragments (sections for example) in the same page using the id attribute
+- The objective here is to see how an anchor element could be used to link to document fragments (sections for example) in the same page using the id attribute.
+- Also it demonstrates the use of semantic HTML (header, nav, main, section, article)
 
 ## Which curriculum it's part of
 
