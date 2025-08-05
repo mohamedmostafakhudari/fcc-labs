@@ -23,7 +23,7 @@ freeCodeCamp - HTML
 
 the basic HTML page structuring
 
-## Any notes or refelctions
+## Any notes or reflections
 
 ## Status
 
