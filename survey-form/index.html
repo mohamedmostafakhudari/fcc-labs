@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Survey Form</title>
+	</head>
+
+	<body>
+		<h1 id="title">Customer Satisfaction Survey Form</h1>
+		<p id="description">
+			Thank you for taking the time to help us improve our service. By
+			answering just a few questions regarding your last visit, you will
+			contribute to our efforts to enhance our customer overall experience.
+		</p>
+		<form id="survey-form">
+			<div class="form-group">
+				<label
+					for="name"
+					id="name-label"
+					>Name:</label
+				>
+				<input
+					required
+					id="name"
+					type="text"
+					placeholder="Enter your Name"
+				/>
+			</div>
+			<div class="form-group">
+				<label
+					for="email"
+					id="email-label"
+					>Email:</label
+				>
+				<input
+					required
+					id="email"
+					type="email"
+					placeholder="johndoe@abc.com"
+				/>
+			</div>
+			<div class="form-group">
+				<label
+					for="number"
+					id="number-label"
+					>Age(optional):</label
+				>
+				<input
+					id="number"
+					type="number"
+					min="18"
+					max="100"
+					placeholder="Age"
+				/>
+			</div>
+			<div class="form-group">
+				<label
+					for="experience-rating"
+					id="experience-rating-label"
+					>Which option best describe your last visit?</label
+				>
+				<select id="experience-rating">
+					<option
+						value="default"
+						disabled
+						selected
+					>
+						Select a rating
+					</option>
+					<option value="5">Excellent</option>
+					<option value="4">Good</option>
+					<option value="3">Normal</option>
+					<option value="2">Poor</option>
+					<option value="1">Terrible</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>Would you recommend our store to a friend?</p>
+				<div>
+					<input
+						type="radio"
+						name="recommendation"
+						value="definitely"
+						id="recommendation-definitely"
+					/>
+					<label for="recommendation-definitely">Definitely</label>
+					<input
+						type="radio"
+						name="recommendation"
+						value="maybe"
+						id="recommendation-maybe"
+					/>
+					<label for="recommendation-definitely">Maybe</label>
+					<input
+						type="radio"
+						name="recommendation"
+						value="not sure"
+						id="recommendation-not-sure"
+					/>
+					<label for="recommendation-not-sure">Not sure</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<p>
+					Which of these do you think is worth directing our efforts towards
+					first? <br />(You may choose more than one.)
+				</p>
+				<div>
+					<input
+						type="checkbox"
+						id="product-quality"
+						value="product-quality"
+					/>
+					<label for="product-quality">Product quality and selection</label>
+					<input
+						type="checkbox"
+						id="staff-service"
+						value="staff-service"
+					/>
+					<label for="staff-service">Staff service and attitude</label>
+					<input
+						type="checkbox"
+						id="speed"
+						value="speed"
+					/>
+					<label for="speed">Speed and efficiency</label>
+					<input
+						type="checkbox"
+						id="cleanliness"
+						value="cleanliness"
+					/>
+					<label for="cleanliness">Cleanliness and organization</label>
+					<input
+						type="checkbox"
+						id="prices"
+						value="prices"
+					/>
+					<label for="prices">Prices and deals</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="comments">Any comments or suggestions?</label><br />
+				<textarea
+					id="comments"
+					rows="5"
+					cols="30"
+					placeholder="Enter your comment here..."
+				></textarea>
+			</div>
+			<input
+				type="submit"
+				value="Submit"
+				id="submit"
+			/>
+		</form>
+	</body>
+</html>
