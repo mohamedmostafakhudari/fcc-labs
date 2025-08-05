@@ -7,6 +7,7 @@ A repo to curate my fCC labs solutions.
 ## Current Progress
 
 Build a Travel Agency Page - In Progress
+
 Build a Video Compilation Page - Upcoming
 
 ## Links
@@ -15,4 +16,6 @@ Build a Video Compilation Page - Upcoming
 
 #### Source
 
-#### Link
+https://github.com/mohamedmostafakhudari/fcc-labs/tree/main/recipe-page
+
+#### Screenshot
