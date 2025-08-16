@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Job Application Form</title>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<form
+					action=""
+					method="POST"
+				>
+					<h1>Job Application Form</h1>
+					<p>Please fill out the form below to apply for this position.</p>
+					<div class="input-field">
+						<label for="name">Full Name</label>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Enter your full name"
+							required
+						/>
+					</div>
+					<div class="input-field">
+						<label for="email">Email</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Enter your email"
+							required
+						/>
+					</div>
+					<div class="input-field">
+						<label for="phone">Phone Number</label>
+						<input
+							type="tel"
+							id="phone"
+							name="phone"
+							placeholder="Enter your phone number"
+						/>
+					</div>
+					<div class="input-field">
+						<label for="position">Position Applied For</label>
+						<select id="position">
+							<option value="front-end">Front-End Developer</option>
+							<option value="back-end">Back-End Developer</option>
+							<option value="ux-ui-designer">UX/UI Designer</option>
+							<option value="devops">Devops Developer</option>
+						</select>
+					</div>
+					<fieldset class="radio-group">
+						<legend>Availability</legend>
+						<label
+							for="full-time-availability"
+							class="form-control"
+						>
+							<input
+								type="radio"
+								id="full-time-availability"
+								name="availability"
+							/>
+							Full Time</label
+						>
+						<label
+							for="part-time-availability"
+							class="form-control"
+						>
+							<input
+								type="radio"
+								id="part-time-availability"
+								name="availability"
+							/>
+							Part Time</label
+						>
+					</fieldset>
+					<div class="input-field">
+						<label for="resume">Upload Resume (PDF or DOC)</label>
+						<input
+							type="file"
+							id="resume"
+							name="resume"
+							accept=".pdf,.doc,.docx"
+							required
+						/>
+					</div>
+					<div class="input-field">
+						<label for="message">Message to Hiring Team</label>
+						<textarea
+							name="message"
+							id="message"
+							rows="4"
+							placeholder="Write a short message to the hiring team"
+						></textarea>
+					</div>
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
