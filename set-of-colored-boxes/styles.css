@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-clr: #f4f4f4;
+	--rgb-clr: rgb(177, 43, 43);
+	--hex-clr: #044304;
+	--hsl-clr: hsl(202, 78%, 28%);
+	--word-clr: coral;
+}
+html {
+	font-size: 16px;
+	height: 100%;
+	min-height: 100%;
+}
+body {
+	background-color: var(--bg-clr);
+	height: 100%;
+	line-height: 1.5;
+}
+.color-grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+.color-box:first-child {
+	margin-right: auto;
+}
+.color-box:last-child {
+	margin-left: auto;
+}
+.color-box {
+	--width: 200px;
+	width: var(--width);
+	height: var(--width);
+}
+:where(.color1, .color2, .color3, .color4, .color5) {
+	background-color: var(--clr);
+}
